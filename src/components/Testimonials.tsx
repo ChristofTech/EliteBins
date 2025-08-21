@@ -1,44 +1,42 @@
-import React, { useState, useEffect } from 'react';
-import { Card } from 'primereact/card';
-import { Button } from 'primereact/button';
-import { Avatar } from 'primereact/avatar';
-import { Rating } from 'primereact/rating';
-import { Carousel } from 'primereact/carousel';
+import { Avatar } from "primereact/avatar";
+import { Card } from "primereact/card";
+import { Carousel } from "primereact/carousel";
+import { Rating } from "primereact/rating";
 
 const testimonials = [
   {
-    name: 'Sarah Johnson',
-    role: 'Frontend Developer',
-    company: 'TechCorp',
-    content: 'This React template with PrimeReact saved me weeks of development time. The component quality is exceptional and the design is absolutely stunning.',
+    name: "Sarah Johnson",
+    residence: "Oceanside, CA",
+    content: "Eli did an amazing job with my kitchen remodel!",
     rating: 5,
-    avatar: 'https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=400'
+    avatar:
+      "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=400",
   },
   {
-    name: 'Michael Chen',
-    role: 'Full Stack Engineer',
-    company: 'StartupXYZ',
-    content: 'The TypeScript integration and PrimeReact component architecture make this template perfect for scaling applications. Highly recommended!',
+    name: "Michael Chen",
+    residence: "Vista, CA",
+    content: "Lorem ipsum dolor",
     rating: 5,
-    avatar: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=400'
+    avatar:
+      "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=400",
   },
   {
-    name: 'Emily Rodriguez',
-    role: 'UI/UX Designer',
-    company: 'DesignStudio',
-    content: 'Beautiful animations and thoughtful micro-interactions. PrimeReact components bridge the gap between design and development perfectly.',
+    name: "Emily Rodriguez",
+    residence: "Escondido, CA",
+    content: "Fantastic service and attention to detail. Highly recommend!",
     rating: 5,
-    avatar: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400'
-  }
+    avatar:
+      "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400",
+  },
 ];
 
 const Testimonials = () => {
-  const testimonialTemplate = (testimonial: typeof testimonials[0]) => {
+  const testimonialTemplate = (testimonial: (typeof testimonials)[0]) => {
     const header = (
       <div className="flex justify-center p-4">
-        <Avatar 
-          image={testimonial.avatar} 
-          size="xlarge" 
+        <Avatar
+          image={testimonial.avatar}
+          size="xlarge"
           shape="circle"
           className="border-2 border-white/20"
         />
@@ -47,15 +45,15 @@ const Testimonials = () => {
 
     const footer = (
       <div className="text-center space-y-2">
-        <Rating 
-          value={testimonial.rating} 
-          readOnly 
+        <Rating
+          value={testimonial.rating}
+          readOnly
           cancel={false}
           className="flex justify-center"
         />
         <div>
           <h4 className="font-semibold text-white">{testimonial.name}</h4>
-          <p className="text-gray-300 text-sm">{testimonial.role} at {testimonial.company}</p>
+          <p className="text-gray-300 text-sm">{testimonial.residence}</p>
         </div>
       </div>
     );
@@ -83,13 +81,10 @@ const Testimonials = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            What Developers Say
+            What homeowners had to say about Algar!
           </h2>
-          <p className="text-xl text-gray-400">
-            Hear from the community building amazing projects with PrimeReact
-          </p>
         </div>
-        
+
         <Carousel
           value={testimonials}
           itemTemplate={testimonialTemplate}
