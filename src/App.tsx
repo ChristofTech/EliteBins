@@ -13,6 +13,7 @@ import 'primereact/resources/primereact.min.css';
 import 'primeicons/primeicons.css';
 
 function App() {
+  console.log("App component rendered");
   return (
     <div className="min-h-screen">
       <Navigation />
