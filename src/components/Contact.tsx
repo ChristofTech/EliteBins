@@ -71,7 +71,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="py-24 bg-gradient-to-br from-blue-50 to-indigo-100">
+    <section className="py-24 bg-gradient-to-br from-lime-50 to-green-100">
       <Toast ref={toast} />
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
@@ -179,7 +179,7 @@ const Contact = () => {
             <div className="space-y-4">
               <i className="pi pi-envelope text-4xl text-blue-600"></i>
               <h3 className="text-xl font-semibold text-gray-900">Email Us</h3>
-              <p className="text-gray-600">hello@yourcompany.com</p>
+              <p className="text-gray-600">elite.bins@gmail.com</p>
             </div>
           </Card>
         </div>

@@ -1,7 +1,7 @@
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import Hero from "./components/Hero";
-import Navigation from "./components/Navigation";
+import Header from "./components/Header";
+import { Hero } from "./components/Hero";
 import Testimonials from "./components/Testimonials";
 
 // PrimeReact CSS
@@ -11,8 +11,8 @@ import "primereact/resources/themes/lara-light-blue/theme.css";
 
 function App() {
   return (
-    <div className="min-h-screen">
-      <Navigation />
+    <div>
+      <Header />
       <Hero />
       <Testimonials />
       <Contact />

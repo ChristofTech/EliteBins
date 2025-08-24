@@ -45,12 +45,6 @@ const Footer = () => {
                   className="p-button-text p-button-sm text-left"
                 />
               </li>
-              <li>
-                <Button
-                  label="Contact"
-                  className="p-button-text p-button-sm text-left"
-                />
-              </li>
             </ul>
           </div>
         </div>
@@ -59,7 +53,7 @@ const Footer = () => {
 
         <div className="flex flex-col md:flex-row justify-between items-center pt-8">
           <p className="text-gray-400 mb-4 md:mb-0">
-            © 2025 Eli. All rights reserved.
+            © 2024 Elite Bins. All rights reserved.
           </p>
         </div>
       </div>
