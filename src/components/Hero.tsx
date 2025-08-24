@@ -10,15 +10,11 @@ const Hero = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="animate-fade-in-up">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight">
-            Algar
+            Elite Bins
           </h1>
           <h2 className="text-2xl md:text-4xl lg:text-5xl font-semibold text-gray-500 mb-4">
-            General Contracting
+            "One less thing to worry about"
           </h2>
-
-          <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Cleanup | Restoration | Construction
-          </p>
         </div>
 
         {/* Floating Elements */}
