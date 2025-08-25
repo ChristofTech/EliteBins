@@ -10,6 +10,7 @@ import "primereact/resources/primereact.min.css";
 import "primereact/resources/themes/lara-light-blue/theme.css";
 
 function App() {
+  console.log('test');
   return (
     <div>
       <Header />
