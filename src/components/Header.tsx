@@ -26,7 +26,7 @@ const Header = () => {
     <div className="flex items-center">
       <img
         src={logo_bg}
-        alt="Algar Logo"
+        alt="Elite Bins Logo"
         className="max-w-[40vw] w-[10rem] max-h-[20vh] h-[6rem] mr-2 shadow"
       />
     </div>
