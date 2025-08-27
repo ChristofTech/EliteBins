@@ -35,15 +35,14 @@ const Header = () => {
   const end = (
     <div className="hidden md:flex flex-col items-end space-x-6">
       <Button
-        label="(123) 456-7890"
+        label="(760) 892-1716"
         icon="pi pi-phone"
         className="p-button-rounded p-2"
+        onClick={() => window.open("tel:7608921716", "_self")}
       />
-      <Button
-        label="elite.bins@gmail.com"
-        icon="pi pi-envelope"
-        className="p-button-rounded p-2"
-      />
+      <div className="pi pi-envelope font-bold">
+        <span className="font-bold"> elite.bins@gmail.com</span>
+      </div>
     </div>
   );
 
@@ -71,24 +70,25 @@ const Header = () => {
       {mobileMenuOpen && (
         <div className="md:hidden bg-white border-t border-gray-200 px-4 py-2">
           {items.map((item) => (
-            <Button
-              key={item.label}
-              label={item.label}
-              icon={item.icon}
-              className={`w-full mb-2 ${item.className}`}
-              onClick={item.command}
-            />
+            <div key={`item-${item.label}`} className="mb-2">
+              <Button
+                key={item.label}
+                label={item.label}
+                icon={item.icon}
+                className={`p-button-rounded ${item.className}`}
+                onClick={item.command}
+              />
+            </div>
           ))}
           <Button
             label="(123) 456-7890"
             icon="pi pi-phone"
-            className="w-full mb-2"
+            className="p-button-rounded mb-2"
+            onClick={() => window.open("tel:7608921716", "_self")}
           />
-          <Button
-            label="elite.bins@gmail.com"
-            icon="pi pi-envelope"
-            className="w-full"
-          />
+          <div className="pi pi-envelope w-full font-bold">
+            <span className="font-bold"> elite.bins@gmail.com</span>
+          </div>
         </div>
       )}
     </>

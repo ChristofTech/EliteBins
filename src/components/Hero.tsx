@@ -7,14 +7,19 @@ export const Hero = () => {
         <div className="inset-0 bg-[radial-gradient(circle_at_75%_75%,_theme(colors.green.500)_0%,_transparent_50%)]"></div>
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mt-40">
         <div className="animate-fade-in-up">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight text-neutral-50">
-            Elite Bins
+            ELITE BINS
           </h1>
           <h2 className="text-2xl md:text-4xl lg:text-5xl font-semibold text-gray-500 mb-4 text-lime-300">
             "One less thing to worry about"
           </h2>
+          <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-8">
+            We take your bins out and bring them back in, so you don't have to.
+            Reliable, convenient, and hassle-free waste management services for
+            your home!
+          </p>
         </div>
 
         {/* Floating Elements */}
