@@ -1,17 +1,16 @@
 {
   "name": "elite-bins-elm",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "start": "elm make src/Main.elm --output=elm.js && python3 -m http.server 8000",
-    "build": "elm make src/Main.elm --output=elm.js --optimize",
+    "dev": "npx elm make src/Main.elm --output=elm.js && python3 -m http.server 8000",
+    "build": "npx elm make src/Main.elm --output=elm.js --optimize",
     "preview": "vite preview",
-    "elm:make": "elm make src/Main.elm --output=dist/elm.js",
-    "elm:dev": "elm make src/Main.elm --output=dist/elm.js --debug"
+    "elm:make": "npx elm make src/Main.elm --output=elm.js",
+    "elm:dev": "npx elm make src/Main.elm --output=elm.js --debug"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "elm": "0.19.1"
   }

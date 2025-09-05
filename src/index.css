@@ -16,6 +16,7 @@
     line-height: 1.5;
     margin: 0;
     padding: 0;
+    background-color: #ffffff;
   }
 }
 
@@ -46,5 +47,23 @@
     50% {
       opacity: .5;
     }
+  }
+
+  .prose {
+    max-width: none;
+  }
+
+  .prose h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  .prose p {
+    margin-bottom: 1rem;
+  }
+
+  .prose ul {
+    margin: 0;
+    padding-left: 1rem;
   }
 }
