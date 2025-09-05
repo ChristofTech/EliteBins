@@ -6,7 +6,9 @@
   "scripts": {
     "start": "elm make src/Main.elm --output=elm.js && python3 -m http.server 8000",
     "build": "elm make src/Main.elm --output=elm.js --optimize",
-    "dev": "elm make src/Main.elm --output=elm.js && python3 -m http.server 8000"
+    "preview": "vite preview",
+    "elm:make": "elm make src/Main.elm --output=dist/elm.js",
+    "elm:dev": "elm make src/Main.elm --output=dist/elm.js --debug"
   },
   "dependencies": {
   },
